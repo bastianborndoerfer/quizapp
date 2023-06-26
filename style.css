@@ -1,14 +1,22 @@
 *{
     box-sizing: border-box;
+    margin: 8px;
 }
 
 h1{
+    max-width: 300px;
+    background-color: #2196F3;
+    color: white;
+    margin: auto;
+    padding: 16px;
     text-align: center;
+    font-family: arial;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 /* Card-Styles */
-
 .card{
-    max-width: 300px;
+    max-width: 600px;
     margin: auto;
     padding: 16px;
     text-align: center;
@@ -17,12 +25,12 @@ h1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card .answer {
+.answer{
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: #68e190;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -41,13 +49,12 @@ h1{
   }
   .book{
     position: absolute;
-    right: 32px;
-    top: 0;
+    right: 16px;
+    top: -24px;
     background-color: transparent;
     border: none;
     padding: 0;
     font-size: 24px;
-    font-weight: bolder;
   }
   .tag-list-item{
     display: inline-block;
@@ -62,12 +69,12 @@ h1{
   /* Bottom Icon-Bar */
 
   .icon-bar {
-    width: 300px; /* Full-width */
-    background-color: #555;
+    width: 100%; /* Full-width */
+    background-color: #2196F3;
     overflow: auto; /* Overflow due to float */
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     position: fixed;
     bottom: 0;
     right: calc();
