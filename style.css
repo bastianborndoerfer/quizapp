@@ -7,15 +7,17 @@ h1{
 }
 /* Card-Styles */
 
-.card{;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 300px;
-        margin: auto;
-        text-align: center;
-        font-family: arial;
+.card{
+    max-width: 300px;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card button {
+.card .answer {
     border: none;
     outline: 0;
     padding: 12px;
@@ -27,6 +29,7 @@ h1{
     font-size: 18px;
   }
   
+  
   .card button:hover {
     opacity: 0.7;
   }
@@ -36,6 +39,25 @@ h1{
     display: flex;
     justify-content: left;
   }
+  .book{
+    position: absolute;
+    right: 32px;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  .tag-list-item{
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #2196F3;
+    margin-top: 8px;
+    font-size: x-small;
+  }
 
   /* Bottom Icon-Bar */
 
@@ -44,9 +66,11 @@ h1{
     background-color: #555;
     overflow: auto; /* Overflow due to float */
     margin: auto;
-    text-align: center;
     display: flex;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: calc();
   }
   
   .icon-bar a {
