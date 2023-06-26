@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 8px;
+}
+
+h1{
+    max-width: 300px;
+    background-color: #2196F3;
+    color: white;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* Card-Styles */
+.card{
+    max-width: 600px;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.answer{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #68e190;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .tag-list{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+  }
+  .book{
+    position: absolute;
+    right: 16px;
+    top: -24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+  }
+  .tag-list-item{
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #2196F3;
+    margin-top: 8px;
+    font-size: x-small;
+  }
+
+  /* Bottom Icon-Bar */
+
+  .icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #2196F3;
+    overflow: auto; /* Overflow due to float */
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    right: calc();
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #000000; /* Add an active/current color */
+  }
